@@ -5,6 +5,8 @@
 let numbers = 1;
 
 let string = 'string';
+let string1 = '10';
+let string2 = 10;
 
 let booleans = true; //or false
 
@@ -75,3 +77,35 @@ var twoSum = function (nums, target) {
 let answerProb1 = twoSum(arrayProb1, targetProb1);
 
 console.log(answerProb1);
+
+// IF STATEMENTS
+
+// = will set a value
+// == will do loose
+if (string1 == string2) {
+	console.log(`this is the == operation ${true}`);
+}
+
+// === will do strict compare  like does 5 = 5
+if (string1 === string2) {
+	console.log(`this is the === operation ${true}`);
+}
+
+let vax = true;
+let ticket = false;
+
+if (ticket && vax) {
+	console.log('your in the concert');
+} else if (ticket === false) {
+	console.log('buy a ticket');
+} else if (vax === false) {
+	console.log('go to riteaide');
+} else {
+	console.log('wtf are you thinking');
+}
+
+let exampleHere = 1;
+
+if (1 != exampleHere) {
+	console.log(`!= true`);
+}
