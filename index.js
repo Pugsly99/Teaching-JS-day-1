@@ -49,4 +49,29 @@ let kidAge = 12;
 let adultAge = 45;
 
 let amountYears = subtract(kidAge, adultAge);
-console.log(amountAge);
+console.log(`this is our age subtracted ${amountYears}`);
+
+// lEET CODE PROB 1
+
+let targetProb1 = 9;
+let arrayProb1 = [3, 4, 11, 7, 1, 15, 1];
+
+var twoSum = function (nums, target) {
+	let total = 0;
+	// 7
+
+	for (let i = 0; i < nums.length; i++) {
+		let diffrence = target - total;
+
+		if (nums[i] <= target && diffrence >= nums[i]) {
+			total += nums[i];
+			console.log(`in the if${total}`);
+		}
+	}
+
+	return total;
+};
+
+let answerProb1 = twoSum(arrayProb1, targetProb1);
+
+console.log(answerProb1);
